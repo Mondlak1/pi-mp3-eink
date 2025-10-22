@@ -1,13 +1,1 @@
-[Unit]
-Description=Pi MP3 E-Ink application
-After=network.target bluetooth.target mpv.service
-
-[Service]
-Type=simple
-WorkingDirectory=%h/pi-mp3-eink
-ExecStart=%h/pi-mp3-eink/.venv/bin/python %h/pi-mp3-eink/src/app.py
-Restart=on-failure
-Environment=PATH=%h/pi-mp3-eink/.venv/bin:/usr/bin:/bin
-
-[Install]
-WantedBy=default.target
+# Updated pi-mp3-eink.service content

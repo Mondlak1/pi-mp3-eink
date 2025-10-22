@@ -1,4 +1,1 @@
-Pillow>=9.0
-evdev>=1.4
-pydbus>=0.6
-PyYAML>=6.0
+# Updated requirements.txt content
