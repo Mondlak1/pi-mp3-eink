@@ -1,0 +1,7 @@
+# Example configuration for Pi MP3 E-Ink
+music_dir: /home/pi/Music
+display_type: epd2in13bc
+refresh_interval: 8  # seconds between e-ink refreshes
+font_path: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+font_size: 14
+mpv_ipc_socket: /tmp/mpv-sock

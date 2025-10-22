@@ -1,0 +1,12 @@
+[Unit]
+Description=mpv audio player (IPC)
+After=network.target bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mpv --idle --no-terminal --no-video --input-ipc-server=/tmp/mpv-sock
+Restart=on-failure
+Environment=PATH=%h/pi-mp3-eink/.venv/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=default.target
